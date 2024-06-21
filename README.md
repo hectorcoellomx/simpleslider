@@ -36,16 +36,16 @@ Incluye la estructura básica de HTML:
 </head>
 <body style="background-color: gainsboro;">
 
+    <div style="border-bottom: 1px solid gray; color: #444; margin-bottom: 30px;"><h2>Simple Slider</h2></div>
+
     <div id="sslider">
         <span class="btn-slider btn-slider-left" onclick="slider.move('l')"></span>
         <ul>
-            <li><img src="./img/flayer1.png" alt=""></li>
-            <li><img src="./img/flayer2.png" alt=""></li>
-            <li><img src="./img/flayer3.png" alt=""></li>
-            <li><img src="./img/flayer4.png" alt=""></li>
-            <li><img src="./img/flayer4.png" alt=""></li>
-            <li><img src="./img/flayer4.png" alt=""></li>
-            <li><img src="./img/flayer4.png" alt=""></li>
+            <li><img src="./img/1.jpg" alt=""></li>
+            <li><img src="./img/2.jpg" alt=""></li>
+            <li><img src="./img/3.jpg" alt=""></li>
+            <li><img src="./img/4.jpg" alt=""></li>
+            <li><img src="./img/5.jpg" alt=""></li>
         </ul>
         <span class="btn-slider btn-slider-right" onclick="slider.move('r')"></span>
     </div>
@@ -57,7 +57,7 @@ Incluye la estructura básica de HTML:
             itemWidth: 300,
             itemHeight: 200,
             margin: 10,
-            totalView: 4
+            totalView: 3
         });
     </script>
 </body>
