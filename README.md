@@ -32,7 +32,7 @@ Incluye la estructura básica de HTML:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Slider</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="simple-slider.css">
 </head>
 <body style="background-color: gainsboro;">
 
@@ -41,16 +41,17 @@ Incluye la estructura básica de HTML:
     <div id="sslider">
         <span class="btn-slider btn-slider-left" onclick="slider.move('l')"></span>
         <ul>
-            <li><img src="./img/1.jpg" alt=""></li>
-            <li><img src="./img/2.jpg" alt=""></li>
-            <li><img src="./img/3.jpg" alt=""></li>
-            <li><img src="./img/4.jpg" alt=""></li>
-            <li><img src="./img/5.jpg" alt=""></li>
+            <li><img src="./img/1.jpg" alt="" style="width: 100%;"></li>
+            <li><img src="./img/2.jpg" alt="" style="width: 100%;"></li>
+            <li><img src="./img/3.jpg" alt="" style="width: 100%;"></li>
+            <li><img src="./img/4.jpg" alt="" style="width: 100%;"></li>
+            <li><img src="./img/5.jpg" alt="" style="width: 100%;"></li>
         </ul>
         <span class="btn-slider btn-slider-right" onclick="slider.move('r')"></span>
     </div>
 
-    <script src="slider.js"></script>
+    <script src="simple-slider.js"></script>
+
     <script>
         const slider = new SimpleSlider({
             container: '#sslider',
@@ -60,5 +61,6 @@ Incluye la estructura básica de HTML:
             totalView: 3
         });
     </script>
+    
 </body>
 </html>
